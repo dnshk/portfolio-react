@@ -2,6 +2,7 @@ import Swiper from 'swiper';
 import 'swiper/css';
 import Typed from 'typed.js'
 import GLightbox from 'glightbox'
+import '../index.css';
 
 (function() {
     "use strict";
