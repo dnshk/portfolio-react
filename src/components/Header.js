@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 function Header() {
+
     return (
         <div className="container d-flex align-items-center justify-content-between">
             <h1 className="logo">
