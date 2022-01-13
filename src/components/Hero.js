@@ -1,8 +1,9 @@
 import React from 'react';
+import bgImg from '../img/hero-bg.jpg';
 
 function Hero() {
     return (
-        <div id="hero" className="hero route bg-image" style={{backgroundImage: "url(" + "./img/hero-bg.jpg" + ")"}}>
+        <div id="hero" className="hero route bg-image" style={{backgroundImage: "url(" + bgImg + ")"}}>
             <div className="overlay-itro"></div>
             <div className="hero-content display-table">
                 <div className="table-cell">
