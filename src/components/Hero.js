@@ -2,7 +2,7 @@ import React from 'react';
 
 function Hero() {
     return (
-        <div className="hero route bg-image" style={{backgroundImage: "url(" + "./img/hero-bg.jpg" + ")"}}>
+        <div id="hero" className="hero route bg-image" style={{backgroundImage: "url(" + "./img/hero-bg.jpg" + ")"}}>
             <div className="overlay-itro"></div>
             <div className="hero-content display-table">
                 <div className="table-cell">

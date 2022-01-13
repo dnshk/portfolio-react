@@ -2,7 +2,7 @@ import React from 'react';
 
 function Footer() {
     return (
-        <div>
+        <footer>
             <div className="container">
                 <div className="row">
                     <div className="col-sm-12">
@@ -14,7 +14,7 @@ function Footer() {
                     </div>
                 </div>
             </div>
-        </div>
+        </footer>
 
     );
 }
