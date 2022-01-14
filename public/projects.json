@@ -4,8 +4,8 @@
             "title": "SportHub Website",
             "type": "Web App",
             "category": "Full Stack Website Development",
-            "project_date": "2021-04-01",
-            "project_client": "College Group Project",
+            "date": "2021-04-01",
+            "client": "College Group Project",
             "details": "This group project is a graduation project for my college program. My personal contribution is the calendar page design and development (Slide 2), database design for this page and connecting both to show the up to date information properly.",
             "titleImage": "",
             "images":[]
@@ -14,8 +14,8 @@
             "title": "Harvada",
             "type": "Website",
             "category": "WordPress Website Development",
-            "project_date": "2021-11-01",
-            "project_client": "Startup Company",
+            "date": "2021-11-01",
+            "client": "Startup Company",
             "details": "This project is an online store for a Canadian company launching their new project. The main focus of the project is innovative furniture design. Link:",
             "titleImage": "",
             "images":[]
@@ -24,8 +24,8 @@
             "title": "Fan Check Website",
             "type": "Promo Website",
             "category": "Front End Website Development",
-            "project_date": "2020-08-01",
-            "project_client": "Startup / Side Project",
+            "date": "2020-08-01",
+            "client": "Startup / Side Project",
             "details": "This website was built to promote an iOS mobile app that allows tracking popular sports matches fetching data from multiple APIs.",
             "titleImage": "",
             "images":[]
