@@ -10,7 +10,6 @@ import Work from './components/Work';
 import 'bootstrap';
 import Swiper from 'swiper';
 import 'swiper/css/bundle';
-import Typed from 'typed.js'
 import GLightbox from 'glightbox'
 import 'jquery';
 
@@ -136,50 +135,9 @@ function App() {
     //       }
     //     });
 
-    //     const typed = select('.typed')
-    //     if (typed) {
-    //       let typed_strings = typed.getAttribute('data-typed-items')
-    //       typed_strings = typed_strings.split(',')
-    //       new Typed('.typed', {
-    //         strings: typed_strings,
-    //         loop: true,
-    //         typeSpeed: 100,
-    //         backSpeed: 50,
-    //         backDelay: 2000
-    //       });
-    //     }
 
     //     const portfolioLightbox = GLightbox({
     //       selector: '.portfolio-lightbox'
-    //     });
-
-    //     new Swiper('.testimonials-slider', {
-    //       speed: 600,
-    //       loop: true,
-    //       autoplay: {
-    //         delay: 5000,
-    //         disableOnInteraction: false
-    //       },
-    //       slidesPerView: 'auto',
-    //       pagination: {
-    //         el: '.swiper-pagination',
-    //         type: 'bullets',
-    //         clickable: true
-    //       }
-    //     });
-
-    //     new Swiper('.portfolio-details-slider', {
-    //       speed: 400,
-    //       loop: true,
-    //       autoplay: {
-    //         delay: 5000,
-    //         disableOnInteraction: false
-    //       },
-    //       pagination: {
-    //         el: '.swiper-pagination',
-    //         type: 'bullets',
-    //         clickable: true
-    //       }
     //     });
 
     //     let preloader = select('#preloader');
