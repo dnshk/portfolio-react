@@ -4,7 +4,7 @@ import bgImg from '../img/hero-bg.jpg';
 function Hero() {
     return (
         <div id="hero" className="hero route bg-image" style={{backgroundImage: "url(" + bgImg + ")"}}>
-            <div className="overlay-itro"></div>
+            <div className="overlay-intro"></div>
             <div className="hero-content display-table">
                 <div className="table-cell">
                     <div className="container">

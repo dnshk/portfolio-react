@@ -1,7 +1,5 @@
 import React from 'react';
 
-
-
 function Work() {
     return (
         <section id="work" className="portfolio-mf sect-pt4 route">
