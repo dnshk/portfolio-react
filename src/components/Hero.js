@@ -24,8 +24,8 @@ function Hero() {
             <div className="hero-content display-table">
                 <div className="table-cell">
                     <div className="container">
-                        <p class="hero-subtitle">
-                            <span class="typed" data-typed-items="Oleksii Denyshchyk"></span>
+                        <p className="hero-subtitle">
+                            <span className="typed" data-typed-items="Oleksii Denyshchyk"></span>
                         </p>
                         <h2 className="hero-title mb-3">
                             Full Stack Web Developer

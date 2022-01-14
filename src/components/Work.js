@@ -1,6 +1,29 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 
 function Work() {
+    const [updateData, setUpdateData] = useState('');
+    const [projectData, setProjectData] = useState([]);
+    const getData = () => {
+        fetch('projects.json',
+            {
+                headers : {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                   }
+            })
+            .then(function(response) {
+                return response.json();
+            })
+            .then(function(responseData) {
+                setProjectData(responseData);
+                setUpdateData('updated');
+            });
+    }
+
+    useEffect(() => {
+        getData();
+    }, [updateData]);
+
     return (
         <section id="work" className="portfolio-mf sect-pt4 route">
             <div className="container">
@@ -18,6 +41,36 @@ function Work() {
                     </div>
                 </div>
                 <div className="row">
+                {
+                    projectData.projects && projectData.projects.length > 0 && projectData.projects.map((item)=>
+                        <div className="col-md-4" key={item.title}>
+                            <div className="work-box">
+                                <a href={item.titleImage} data-gallery="portfolioGallery" className="portfolio-lightbox">
+                                    <div className="work-img">
+                                        <img src={item.titleImage} alt="showcase item" className="img-fluid" />
+                                    </div>
+                                </a>
+                                <div className="work-content">
+                                    <div className="row">
+                                        <div className="col-sm-8">
+                                            <h2 className="w-title">{item.title}</h2>
+                                            <div className="w-more">
+                                                <span className="w-ctegory">{item.type}</span> / <span className="w-date"> {item.date}</span>
+                                            </div>
+                                        </div>
+                                        <div className="col-sm-4">
+                                            <div className="w-like">
+                                                <a href="portfolio-details-1.html"> <span className="bi bi-plus-circle" /></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    )
+                }
+                </div>
+                {/* <div className="row">
                     <div className="col-md-4">
                         <div className="work-box">
                             <a href="assets/img/work-1.jpg" data-gallery="portfolioGallery" className="portfolio-lightbox">
@@ -114,7 +167,7 @@ function Work() {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
         </section>
     );
