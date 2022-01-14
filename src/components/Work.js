@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import 'bootstrap';
 
 function Work() {
     const [updateData, setUpdateData] = useState('');
@@ -43,7 +44,7 @@ function Work() {
                 <div className="row">
                 {
                     projectData.projects && projectData.projects.length > 0 && projectData.projects.map((item)=>
-                        <div className="col-md-4" key={item.title}>
+                        <div className="col-md-4" key={item.key}>
                             <div className="work-box">
                                 <a href={item.titleImage} data-gallery="portfolioGallery" className="portfolio-lightbox">
                                     <div className="work-img">
@@ -60,8 +61,27 @@ function Work() {
                                         </div>
                                         <div className="col-sm-4">
                                             <div className="w-like">
-                                                <a href="portfolio-details-1.html"> <span className="bi bi-plus-circle" /></a>
+                                                <button data-toggle="modal" data-target={item.key}> <span className="bi bi-plus-circle" /></button>
                                             </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="modal fade" id="exampleModal" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div className="modal-dialog" role="document">
+                                    <div className="modal-content">
+                                        <div className="modal-header">
+                                            <h5 className="modal-title" id="exampleModalLabel">Modal title</h5>
+                                            <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div className="modal-body">
+                                            ...
+                                        </div>
+                                        <div className="modal-footer">
+                                            <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            <button type="button" className="btn btn-primary">Save changes</button>
                                         </div>
                                     </div>
                                 </div>
