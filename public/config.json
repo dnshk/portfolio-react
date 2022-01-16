@@ -33,5 +33,34 @@
             "titleImage": "",
             "images":[]
         }
+    ],
+    "skills": [
+        "Adobe Illustrator",
+        "Adobe Photoshop",
+        "Bootstrap",
+        "Cascading Style Sheets",
+        "Git",
+        "GitHub",
+        "HTML5",
+        "JavaScript",
+        "Jira",
+        "jQuery",
+        "JSON",
+        "Apache Cordova",
+        "Linux",
+        "Apache2",
+        "Microsoft Access",
+        "Microsoft Excel",
+        "Microsoft IIS",
+        "Microsoft Office",
+        "Microsoft Windows",
+        "MySQL",
+        "Node.js",
+        "PHP",
+        "PowerPoint",
+        "SQL",
+        "Vue.js",
+        "WordPress",
+        "XML"
     ]
 }

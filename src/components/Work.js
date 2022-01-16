@@ -5,7 +5,7 @@ function Work() {
     const [updateData, setUpdateData] = useState('');
     const [projectData, setProjectData] = useState([]);
     const getData = () => {
-        fetch('projects.json',
+        fetch('config.json',
             {
                 headers : {
                     'Content-Type': 'application/json',
