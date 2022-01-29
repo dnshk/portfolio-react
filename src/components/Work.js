@@ -3,6 +3,8 @@ import 'bootstrap';
 import { useToggles } from '../js/useToggles.js';
 import Modal from "react-bootstrap/Modal";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Swiper from 'swiper/bundle';
+import 'swiper/css/bundle';
 
 function Work() {
     const [updateData, setUpdateData] = useState('');
@@ -27,6 +29,20 @@ function Work() {
     useEffect(() => {
         getData();
     }, [updateData]);
+
+    new Swiper('.portfolio-details-slider', {
+        speed: 400,
+        loop: true,
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          type: 'bullets',
+          clickable: true
+        }
+    });
 
     const { toggles, handleToggles } = useToggles({
         isHarvadaModalOpen: false,
@@ -58,7 +74,7 @@ function Work() {
                             <div className="work-box">
                                 <a href={item.titleImage} data-gallery="portfolioGallery" className="portfolio-lightbox">
                                     <div className="work-img">
-                                        <img src={item.titleImage} alt="showcase item" className="img-fluid" />
+                                        <img src={`${process.env.PUBLIC_URL}` + item.titleImage} alt="showcase item" className="img-fluid" />
                                     </div>
                                 </a>
                                 <div className="work-content">
@@ -87,9 +103,9 @@ function Work() {
                                                     <div className="portfolio-details-slider swiper-container">
                                                         <div className="swiper-wrapper align-items-center">
                                                             {
-                                                                projectData.images && projectData.images.length > 0 && projectData.images.map((image)=>
-                                                                    <div className="swiper-slide">
-                                                                      <img src={image} alt="Project Image"/>
+                                                                item.images && item.images.length > 0 && item.images.map((image)=>
+                                                                    <div className="swiper-slide" key={image}>
+                                                                        <img src={`${process.env.PUBLIC_URL}` + image} alt="project" />
                                                                     </div>
                                                                 )
                                                             }
@@ -117,7 +133,7 @@ function Work() {
                                         </div>
                                     </section>
                                 </Modal.Body>
-                                <Modal.Footer><button onClick={() => handleToggles(item.toggle, false)}>Close</button></Modal.Footer>
+                                <Modal.Footer><button className="btn btn-danger" onClick={() => handleToggles(item.toggle, false)}>Close</button></Modal.Footer>
                             </Modal>
                         </div>
                     )
