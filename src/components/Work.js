@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import 'bootstrap';
 import { useToggles } from '../js/useToggles.js';
-
 import Modal from "react-bootstrap/Modal";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -34,7 +33,7 @@ function Work() {
         isEveryDropModalOpen: false,
         isSportHubModalOpen: false,
         isFanCheckModalOpen: false
-      });
+    });
 
     return (
         <section id="work" className="portfolio-mf sect-pt4 route">
@@ -54,56 +53,74 @@ function Work() {
                 </div>
                 <div className="row">
                 {
-                    <Modal show={false}>
-                        <Modal.Header>Test Header</Modal.Header>
-                        <Modal.Body>Test Body</Modal.Body>
-                        <Modal.Footer>Test Footer</Modal.Footer>
-                    </Modal>
-                    // projectData.projects && projectData.projects.length > 0 && projectData.projects.map((item)=>
-                    //     <div className="col-md-4" key={item.key}>
-                    //         <div className="work-box">
-                    //             <a href={item.titleImage} data-gallery="portfolioGallery" className="portfolio-lightbox">
-                    //                 <div className="work-img">
-                    //                     <img src={item.titleImage} alt="showcase item" className="img-fluid" />
-                    //                 </div>
-                    //             </a>
-                    //             <div className="work-content">
-                    //                 <div className="row">
-                    //                     <div className="col-sm-8">
-                    //                         <h2 className="w-title">{item.title}</h2>
-                    //                         <div className="w-more">
-                    //                             <span className="w-ctegory">{item.type}</span> / <span className="w-date"> {item.date}</span>
-                    //                         </div>
-                    //                     </div>
-                    //                     <div className="col-sm-4">
-                    //                         <div className="w-like">
-                    //                             <button data-toggle="modal" data-target={item.key}> <span className="bi bi-plus-circle" /></button>
-                    //                         </div>
-                    //                     </div>
-                    //                 </div>
-                    //             </div>
-                    //         </div>
-                    //         <div className="modal fade" id="exampleModal" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    //             <div className="modal-dialog" role="document">
-                    //                 <div className="modal-content">
-                    //                     <div className="modal-header">
-                    //                         <h5 className="modal-title" id="exampleModalLabel">Modal title</h5>
-                    //                         <button type="button" className="close" data-dismiss="modal" aria-label="Close">
-                    //                             <span aria-hidden="true">&times;</span>
-                    //                         </button>
-                    //                     </div>
-                    //                     <div className="modal-body">
-                    //                         ...
-                    //                     </div>
-                    //                     <div className="modal-footer">
-                    //                         <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>
-                    //                         <button type="button" className="btn btn-primary">Save changes</button>
-                    //                     </div>
-                    //                 </div>
-                    //             </div>
-                    //         </div>
-                    //     </div>
-                    // )
+                    projectData.projects && projectData.projects.length > 0 && projectData.projects.map((item)=>
+                        <div className="col-md-4" key={item.key}>
+                            <div className="work-box">
+                                <a href={item.titleImage} data-gallery="portfolioGallery" className="portfolio-lightbox">
+                                    <div className="work-img">
+                                        <img src={item.titleImage} alt="showcase item" className="img-fluid" />
+                                    </div>
+                                </a>
+                                <div className="work-content">
+                                    <div className="row">
+                                        <div className="col-sm-8">
+                                            <h2 className="w-title">{item.title}</h2>
+                                            <div className="w-more">
+                                                <span className="w-ctegory">{item.type}</span> / <span className="w-date"> {item.date}</span>
+                                            </div>
+                                        </div>
+                                        <div className="col-sm-4">
+                                            <div className="w-like">
+                                                <button onClick={() => handleToggles(item.toggle, true)}> <span className="bi bi-plus-circle" /></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <Modal show={ eval("toggles." + item.toggle) } size="lg">
+                                <Modal.Header>{item.title}</Modal.Header>
+                                <Modal.Body>
+                                    <section id="portfolio-details" className="portfolio-details">
+                                        <div className="container">
+                                            <div className="row gy-4">
+                                                <div className="col-lg-8">
+                                                    <div className="portfolio-details-slider swiper-container">
+                                                        <div className="swiper-wrapper align-items-center">
+                                                            {
+                                                                projectData.images && projectData.images.length > 0 && projectData.images.map((image)=>
+                                                                    <div className="swiper-slide">
+                                                                      <img src={image} alt="Project Image"/>
+                                                                    </div>
+                                                                )
+                                                            }
+                                                        </div>
+                                                        <div className="swiper-pagination"></div>
+                                                    </div>
+                                                </div>
+                                                <div className="col-lg-4">
+                                                    <div className="portfolio-info">
+                                                        <h3>Project information</h3>
+                                                        <ul>
+                                                          <li><strong>Category</strong>: Full Stack Website Development</li>
+                                                          <li><strong>Client</strong>: College Group Project</li>
+                                                          <li><strong>Project date</strong>: January - April, 2021</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div className="portfolio-description">
+                                                        <h2>Project Details</h2>
+                                                        <p>
+                                                            {item.details}
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </Modal.Body>
+                                <Modal.Footer><button onClick={() => handleToggles(item.toggle, false)}>Close</button></Modal.Footer>
+                            </Modal>
+                        </div>
+                    )
                 }
                 </div>
             </div>
