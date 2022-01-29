@@ -30,6 +30,13 @@ function Work() {
         getData();
     }, [updateData]);
 
+    const { toggles, handleToggles } = useToggles({
+        isHarvadaModalOpen: false,
+        isEveryDropModalOpen: false,
+        isSportHubModalOpen: false,
+        isFanCheckModalOpen: false
+    });
+
     new Swiper('.portfolio-details-slider', {
         speed: 400,
         loop: true,
@@ -42,13 +49,6 @@ function Work() {
           type: 'bullets',
           clickable: true
         }
-    });
-
-    const { toggles, handleToggles } = useToggles({
-        isHarvadaModalOpen: false,
-        isEveryDropModalOpen: false,
-        isSportHubModalOpen: false,
-        isFanCheckModalOpen: false
     });
 
     return (
@@ -87,7 +87,7 @@ function Work() {
                                         </div>
                                         <div className="col-sm-4">
                                             <div className="w-like">
-                                                <button onClick={() => handleToggles(item.toggle, true)}> <span className="bi bi-plus-circle" /></button>
+                                                <a className="project-expand" onClick={() => handleToggles(item.toggle, true)}> <span className="bi bi-plus-circle" /></a>
                                             </div>
                                         </div>
                                     </div>
