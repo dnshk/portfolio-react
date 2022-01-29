@@ -40,7 +40,6 @@ function About() {
                                     </div>
                                     <div className="col-sm-6 col-md-7">
                                         <div className="about-info">
-                                            <p><span className="title-s">Full Name: </span> <span>Oleksii Denyshchyk</span></p>
                                             <p><span className="title-s">Current Ocupation: </span> <span>Full Stack Web Developer</span></p>
                                             <p><span className="title-s">Current Employment Status: </span> <span>Freelancer</span></p>
                                         </div>

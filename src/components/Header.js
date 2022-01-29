@@ -36,7 +36,7 @@ function Header() {
             <div className="container d-flex align-items-center justify-content-between">
                 <h1 className="logo">
                     <a href="#hero">
-                        Oleksii Denyshchyk
+                        Alex Denyshchyk
                     </a>
                 </h1>
                 <nav id="navbar" className='navbar'>

@@ -30,7 +30,7 @@ function Footer() {
                     <div className="col-sm-12">
                         <div className="copyright-box">
                             <p className="copyright">
-                                2021 <strong>Oleksii Denyshchyk</strong>
+                                2021 <strong>Alex Denyshchyk</strong>
                             </p>
                         </div>
                     </div>
