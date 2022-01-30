@@ -5,9 +5,10 @@
             "title": "SportHub Website",
             "type": "Web App",
             "category": "Full Stack Website Development",
-            "date": "2021-04-01",
+            "date": "Apr, 2021",
             "client": "College Group Project",
             "details": "This group project is a graduation project for my college program. My personal contribution is the calendar page design and development (Slide 2), database design for this page and connecting both to show the up to date information properly.",
+            "link": "https://github.com/andradediego/SportHub",
             "titleImage": "/assets/sporthub/showcase.jpg",
             "images":["/assets/sporthub/showcase.jpg", "/assets/sporthub/calendar.png", "/assets/sporthub/about-us.jpg"],
             "toggle": "isSportHubModalOpen"
@@ -17,11 +18,12 @@
             "title": "Harvada",
             "type": "Website",
             "category": "WordPress Website Development",
-            "date": "2021-11-01",
+            "date": "Nov, 2021",
             "client": "Startup Company",
-            "details": "This project is an online store for a Canadian company launching their new project. The main focus of the project is innovative furniture design. Link:",
-            "titleImage": "",
-            "images":[],
+            "details": "This project is an online store for a Canadian company launching their new project. The main focus of the project is innovative furniture design.",
+            "link": "http://35.183.124.82/",
+            "titleImage": "/assets/harvada/showcase.png",
+            "images":["/assets/harvada/showcase.png", "/assets/harvada/shop.png", "/assets/harvada/home.png"],
             "toggle": "isHarvadaModalOpen"
         },
         {
@@ -29,11 +31,11 @@
             "title": "Fan Check Website",
             "type": "Promo Website",
             "category": "Front End Website Development",
-            "date": "2020-08-01",
+            "date": "Jan, 2021",
             "client": "Startup / Side Project",
             "details": "This website was built to promote an iOS mobile app that allows tracking popular sports matches fetching data from multiple APIs.",
-            "titleImage": "",
-            "images":[],
+            "titleImage": "/assets/fancheck/showcase.jpg",
+            "images":["/assets/fancheck/showcase.jpg"],
             "toggle": "isFanCheckModalOpen"
         }
     ],
