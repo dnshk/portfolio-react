@@ -36,19 +36,20 @@ function Work() {
         isSportHubModalOpen: false,
         isFanCheckModalOpen: false
     });
-
-    new Swiper('.portfolio-details-slider', {
-        speed: 400,
-        loop: true,
-        autoplay: {
-          delay: 5000,
-          disableOnInteraction: false
-        },
-        pagination: {
-          el: '.swiper-pagination',
-          type: 'bullets',
-          clickable: true
-        }
+    useEffect(() => {
+        new Swiper('.portfolio-details-slider', {
+            speed: 400,
+            loop: true,
+            autoplay: {
+              delay: 5000,
+              disableOnInteraction: false
+            },
+            pagination: {
+              el: '.swiper-pagination',
+              type: 'bullets',
+              clickable: true
+            }
+        });
     });
 
     return (
@@ -117,9 +118,9 @@ function Work() {
                                                     <div className="portfolio-info">
                                                         <h3>Project information</h3>
                                                         <ul>
-                                                          <li><strong>Category</strong>: Full Stack Website Development</li>
-                                                          <li><strong>Client</strong>: College Group Project</li>
-                                                          <li><strong>Project date</strong>: January - April, 2021</li>
+                                                          <li><strong>Category</strong>: {item.category}</li>
+                                                          <li><strong>Client</strong>: {item.client}</li>
+                                                          <li><strong>Project date</strong>: {item.date}</li>
                                                         </ul>
                                                     </div>
                                                     <div className="portfolio-description">
