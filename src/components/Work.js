@@ -1,6 +1,6 @@
-import React, {useState, useEffect} from 'react';
-import 'bootstrap';
+import React, { useState, useEffect } from 'react';
 import { useToggles } from '../js/useToggles.js';
+import 'bootstrap';
 import Modal from "react-bootstrap/Modal";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Swiper from 'swiper/bundle';

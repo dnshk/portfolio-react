@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, { useEffect } from 'react';
 import bgImg from '../img/hero-bg.jpg';
 import Typed from 'typed.js';
 import {select} from '../js/main.js'

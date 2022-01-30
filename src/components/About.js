@@ -1,4 +1,3 @@
-import React, {useEffect, useState} from 'react';
 import profilePhoto from '../img/mugshot.jpg'
 
 function About() {

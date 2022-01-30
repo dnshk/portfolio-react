@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import {onscroll, select} from '../js/main.js'
+import { onscroll, select } from '../js/main.js'
 
 function Header() {
     const [scrolling, setScrolling] = useState(false);

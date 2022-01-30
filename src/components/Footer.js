@@ -1,5 +1,5 @@
-import React, {useEffect} from 'react';
-import {select, onscroll} from '../js/main.js'
+import React, { useEffect } from 'react';
+import { select, onscroll } from '../js/main.js'
 
 function Footer() {
     useEffect(() => {
