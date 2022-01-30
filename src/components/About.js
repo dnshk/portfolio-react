@@ -2,29 +2,6 @@ import React, {useEffect, useState} from 'react';
 import profilePhoto from '../img/mugshot.jpg'
 
 function About() {
-    const [updateData, setUpdateData] = useState('');
-    const [configData, setConfigData] = useState([]);
-    const getData = () => {
-        fetch('config.json',
-            {
-                headers : {
-                    'Content-Type': 'application/json',
-                    'Accept': 'application/json'
-                   }
-            })
-            .then(function(response) {
-                return response.json();
-            })
-            .then(function(responseData) {
-                setConfigData(responseData);
-                setUpdateData('updated');
-            });
-    }
-
-    useEffect(() => {
-        getData();
-        About.projectData = configData;
-    }, [updateData]);
     return (
         <section id="about" className="about-mf sect-pt4 route">
             <div className="container">
