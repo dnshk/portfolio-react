@@ -73,11 +73,9 @@ function Work() {
                     projectData.projects && projectData.projects.length > 0 && projectData.projects.map((item)=>
                         <div className="col-md-4" key={item.key}>
                             <div className="work-box">
-                                <a href={item.titleImage} data-gallery="portfolioGallery" className="portfolio-lightbox">
-                                    <div className="work-img">
-                                        <img src={`${process.env.PUBLIC_URL}` + item.titleImage} alt="showcase item" className="img-fluid" />
-                                    </div>
-                                </a>
+                                <div className="work-img">
+                                    <img src={`${process.env.PUBLIC_URL}` + item.titleImage} alt="showcase item" className="img-fluid" />
+                                </div>
                                 <div className="work-content">
                                     <div className="row">
                                         <div className="col-sm-8">
