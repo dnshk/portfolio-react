@@ -121,12 +121,12 @@ function Work() {
                                                           <li><strong>Project date</strong>: {item.date}</li>
                                                         </ul>
                                                     </div>
-                                                    <div className="portfolio-description">
-                                                        <h2>Project Details</h2>
-                                                        <p>
-                                                            {item.details}
-                                                        </p>
-                                                    </div>
+                                                </div>
+                                                <div className="portfolio-description">
+                                                    <h2>Project Details</h2>
+                                                    <p>
+                                                        {item.details}
+                                                    </p>
                                                 </div>
                                             </div>
                                         </div>
