@@ -62,7 +62,7 @@ function Work() {
                                 Portfolio
                             </h3>
                             <p className="subtitle-a">
-                                My freelance, personal, and college projects are shown here.
+                                Some of my freelance, personal, and college projects are shown here.
                             </p>
                             <div className="line-mf" />
                         </div>
