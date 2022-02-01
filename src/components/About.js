@@ -18,50 +18,33 @@ function About() {
                                         <div className="about-info">
                                             <p><span className="title-s">Current Ocupation: </span> <span>Full Stack Web Developer</span></p>
                                             <p><span className="title-s">Current Employment Status: </span> <span>Freelancer</span></p>
+                                            <div className="column-skills">
+                                                <div className="skill-mf">
+                                                    <div className="title-box-2">
+                                                        <h5 className="title-left">Skills</h5>
+                                                    </div>
+                                                    <div className="skills-column">
+                                                        <div>HTML5</div>
+                                                        <div>CSS/SASS</div>
+                                                        <div>JavaScript</div>
+                                                        <div>PHP/Laravel</div>
+                                                        <div>AngularJS</div>
+                                                        <div>ReactJS</div>
+                                                        <div>Oracle MySQL/MS SQL</div>
+                                                    </div>
+                                                    <div className="skills-column">
+                                                        <div>Wordpress</div>
+                                                        <div>Postman</div>
+                                                        <div>AWS</div>
+                                                        <div>Git</div>
+                                                        <div>Atlassian Jira</div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="row">
-                                    <div className="column-skills">
-                                        <div className="skill-mf">
-                                            <div className="title-box-2">
-                                                <h5 className="title-left">Skills</h5>
-                                            </div>
-                                            <div className="skills-column">
-                                                <div>Adobe Illustrator</div>
-                                                <div>Adobe Photoshop</div>
-                                                <div>Bootstrap</div>
-                                                <div>Cascading Style Sheets </div>
-                                                <div>Git</div>
-                                                <div>GitHub</div>
-                                                <div>HTML5</div>
-                                                <div>JavaScript</div>
-                                                <div>Jira</div>
-                                            </div>
-                                            <div className="skills-column">
-                                                <div>jQuery</div>
-                                                <div>JSON</div>
-                                                <div>Apache Cordova </div>
-                                                <div>Linux</div>
-                                                <div>Apache2</div>
-                                                <div>Microsoft Access</div>
-                                                <div>Microsoft Excel</div>
-                                                <div>Microsoft IIS</div>
-                                                <div>Microsoft Office</div>
-                                            </div>
-                                            <div className="skills-column">
-                                                <div>Microsoft Windows</div>
-                                                <div>MySQL</div>
-                                                <div>Node.js</div>
-                                                <div>PHP</div>
-                                                <div>PowerPoint</div>
-                                                <div>SQL</div>
-                                                <div>Vue.js</div>
-                                                <div>WordPress</div>
-                                                <div>XML</div>
-                                            </div>
-                                        </div>
-                                    </div>
                                     <div className="column-skills" style={{float: 'right'}}>
                                         <div className="about-me pt-4 pt-md-0">
                                             <div className="title-box-2">
