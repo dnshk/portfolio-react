@@ -46,7 +46,6 @@ function Header() {
                         <li><a className={activeLink === '#work' ? 'active nav-link scrollto' : 'nav-link scrollto'} href="#work">Work</a></li>
                         <li><a className={activeLink === '#contact' ? 'active nav-link scrollto' : 'nav-link scrollto'} href="#contact">Contact</a></li>
                     </ul>
-                    <i className="bi bi-list mobile-nav-toggle"></i>
                 </nav>
             </div>
         </header>
