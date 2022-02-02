@@ -609,23 +609,27 @@ footer .credits a {
 }
 .skills-column {
     float: left;
-    width: 33%;
 }
 .column-skills{
     float: left;
     width: 50%;
 }
-.skills-column:after {
+.column-skills:after {
     content: "";
     display: table;
     clear: both;
 }
 @media screen and (max-width: 450px) {
-    .skills-column {
+    .about-info, .column-skills {
+        text-align: center;
+    }
+    .column-skills {
+        float: none;
         width: 100%;
     }
-    .about-me {
-        margin-top: -47%;
+
+    .skills-column {
+        width: 100%;
     }
     .about-info {
         margin-bottom: 10%;
