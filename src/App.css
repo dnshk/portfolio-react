@@ -678,5 +678,8 @@ footer .credits a {
   .about-info {
     margin-bottom: 10%;
   }
+  .about-img {
+    width: 100% !important;
+  }
 }
 /*# sourceMappingURL=App.css.map */
