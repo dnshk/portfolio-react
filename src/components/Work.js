@@ -93,7 +93,10 @@ function Work() {
                                 </div>
                             </div>
                             <Modal show={ eval("toggles." + item.toggle) } size="lg">
-                                <Modal.Header>{item.title}</Modal.Header>
+                                <Modal.Header>
+                                    <h2>{item.title}</h2>
+                                    <i class="bi bi-x-lg modal-close" onClick={() => handleToggles(item.toggle, false)}></i>
+                                </Modal.Header>
                                 <Modal.Body>
                                     <section id="portfolio-details" className="portfolio-details">
                                         <div className="container">
@@ -132,7 +135,10 @@ function Work() {
                                         </div>
                                     </section>
                                 </Modal.Body>
-                                <Modal.Footer><button className="btn btn-danger" onClick={() => handleToggles(item.toggle, false)}>Close</button></Modal.Footer>
+                                <Modal.Footer>
+                                    {item.link ? <span className="btn btn-primary"><a className="project-link" href={item.link}>Website / GitHub Repo</a></span> : '' }
+                                    <button className="btn btn-danger" onClick={() => handleToggles(item.toggle, false)}>Close</button>
+                                </Modal.Footer>
                             </Modal>
                         </div>
                     )
