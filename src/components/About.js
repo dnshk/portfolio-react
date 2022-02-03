@@ -1,6 +1,12 @@
-import profilePhoto from '../img/mugshot.jpg'
+import { useToggles } from '../js/useToggles.js';
+import Modal from "react-bootstrap/Modal";
+import profilePhoto from '../img/mugshot.jpg';
 
 function About() {
+    const { toggles, handleToggles } = useToggles({
+        isMoreAboutModalOpen: false,
+    });
+
     return (
         <section id="about" className="about-mf sect-pt4 route">
             <div className="container">
@@ -18,6 +24,7 @@ function About() {
                                         <div className="about-info">
                                             <p><span className="title-s">Current Ocupation: </span> <span>Full Stack Web Developer</span></p>
                                             <p><span className="title-s">Current Employment Status: </span> <span>Freelancer</span></p>
+                                            <p><a href="./Oleksii_Resume_2022.pdf" className="resume" id="downloadResume" download>Download Resume</a></p>
                                             <div className="column-skills">
                                                 <div className="skill-mf">
                                                     <div className="title-box-2">
@@ -53,8 +60,15 @@ function About() {
                                                 </h5>
                                             </div>
                                             <p className="lead">
-                                                Freelance Full Stack Web Developer with two years of experience in development and four years in various IT-related fields. I recently finished my Web Development and Internet Applications program at Fanshawe College (London, ON) with a GPA of 3.9. Highly interested in new partnerships and Web Development projects.
+                                                Freelance Full Stack Web Developer with more than two years of experience in development and four years in various IT-related fields. I recently finished my Web Development and Internet Applications program at Fanshawe College (London, ON) with a GPA of 3.9. Highly interested in new partnerships and web development projects. <span id="aboutMore" className="about-more" onClick={() => handleToggles("isMoreAboutModalOpen", true)}>Find out more about me.</span>
                                             </p>
+                                            <Modal show={ toggles.isMoreAboutModalOpen } size="lg">
+                                                <Modal.Header>
+                                                    <h3>Other than development</h3>
+                                                    <i class="bi bi-x-lg modal-close" onClick={() => handleToggles("isMoreAboutModalOpen", false)}></i>
+                                                </Modal.Header>
+                                                <Modal.Footer><button className="btn btn-danger" onClick={() => handleToggles("isMoreAboutModalOpen", false)}>Close</button></Modal.Footer>
+                                            </Modal>
                                         </div>
                                     </div>
                                 </div>
