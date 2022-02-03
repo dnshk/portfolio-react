@@ -20,8 +20,8 @@
             "category": "WordPress Website Development",
             "date": "Nov, 2021",
             "client": "Startup Company",
-            "details": "This project is an online store for a Canadian company launching their new project. The main focus of the project is innovative furniture design.",
-            "link": "http://35.183.124.82/",
+            "details": "This website is an online store for a Canadian company launching their new project. The main focus of the project is innovative furniture design.",
+            "link": "http://harvada.io/",
             "titleImage": "/assets/harvada/showcase.png",
             "images":["/assets/harvada/showcase.png", "/assets/harvada/shop.png", "/assets/harvada/home.png"],
             "toggle": "isHarvadaModalOpen"
