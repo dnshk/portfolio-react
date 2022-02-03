@@ -362,18 +362,10 @@ a {
         padding-left: 0rem;
     }
 }
-.skill-mf span {
-    color: $txt-main;
-}
-.skill-mf .progress {
-    background-color: $box-bg;
-    margin: .5rem 0 1.2rem 0;
-    border-radius: 0;
-    height: .7rem;
-}
-.skill-mf .progress .progress-bar {
-    height: .7rem;
-    background-color: $content-bg;
+.about-more, .resume {
+    text-decoration: none;
+    color: $content-bg;
+    cursor: pointer;
 }
 .work-box {
     margin-bottom: 3rem;
@@ -383,6 +375,9 @@ a {
 }
 .work-box:hover img {
     transform: scale(1.3);
+}
+.modal-close {
+    cursor: pointer;
 }
 .project-expand{
     cursor:pointer;
@@ -455,9 +450,6 @@ a {
 .portfolio-details .portfolio-info ul li + li {
     margin-top: 10px;
 }
-.portfolio-details .portfolio-description {
-    padding-top: 30px;
-}
 .portfolio-details .portfolio-description h2 {
     font-size: 26px;
     font-weight: 700;
@@ -482,11 +474,22 @@ a {
 .swiper-pagination .swiper-pagination-bullet-active {
     background-color: $txt-secondary;
 }
+.project-link {
+    color: $txt-secondary;
+    text-decoration: none;
+}
+.project-link:hover {
+    color: $txt-secondary;
+}
 .footer-paralax {
     padding: 4rem 0 0 0;
 }
 .contact-mf {
     margin-top: 4rem;
+}
+.contact-link {
+    text-decoration: none;
+    color: $content-bg;
 }
 @media (min-width: 767px) {
     .contact-mf .box-pl2 {
