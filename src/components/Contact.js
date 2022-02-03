@@ -28,16 +28,16 @@ function Contact() {
                                                     <span className="bi bi-envelope" /> oleksii.denyshchyk@gmail.com
                                                 </li>
                                                 <li>
-                                                    <span>
-                                                        <i className="bi bi-linkedin" />
-                                                    </span>
-                                                    <a href="https://www.linkedin.com/in/dnshk/">LinkedIn profile</a>
+                                                    <a className="contact-link" href="https://www.linkedin.com/in/dnshk/">
+                                                        <span><i className="bi bi-linkedin" /></span>
+                                                        LinkedIn profile
+                                                    </a>
                                                 </li>
                                                 <li>
-                                                    <span>
-                                                        <i className="bi bi-github"/>
-                                                    </span>
-                                                    <a href="https://github.com/dnshk">GitHub profile</a>
+                                                    <a className="contact-link" href="https://github.com/dnshk">
+                                                        <span><i className="bi bi-github"/></span>
+                                                        GitHub profile
+                                                    </a>
                                                 </li>
                                             </ul>
                                         </div>
