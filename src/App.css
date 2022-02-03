@@ -436,20 +436,10 @@ a {
   }
 }
 
-.skill-mf span {
-  color: #4e4e4e;
-}
-
-.skill-mf .progress {
-  background-color: #cde1f8;
-  margin: .5rem 0 1.2rem 0;
-  border-radius: 0;
-  height: .7rem;
-}
-
-.skill-mf .progress .progress-bar {
-  height: .7rem;
-  background-color: #0078ff;
+.about-more, .resume {
+  text-decoration: none;
+  color: #0078ff;
+  cursor: pointer;
 }
 
 .work-box {
@@ -462,6 +452,10 @@ a {
 .work-box:hover img {
   -webkit-transform: scale(1.3);
           transform: scale(1.3);
+}
+
+.modal-close {
+  cursor: pointer;
 }
 
 .project-expand {
@@ -555,10 +549,6 @@ a {
   margin-top: 10px;
 }
 
-.portfolio-details .portfolio-description {
-  padding-top: 30px;
-}
-
 .portfolio-details .portfolio-description h2 {
   font-size: 26px;
   font-weight: 700;
@@ -589,12 +579,26 @@ a {
   background-color: #fff;
 }
 
+.project-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.project-link:hover {
+  color: #fff;
+}
+
 .footer-paralax {
   padding: 4rem 0 0 0;
 }
 
 .contact-mf {
   margin-top: 4rem;
+}
+
+.contact-link {
+  text-decoration: none;
+  color: #0078ff;
 }
 
 @media (min-width: 767px) {
