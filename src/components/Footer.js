@@ -30,10 +30,11 @@ function Footer() {
                     <div className="col-sm-12">
                         <div className="copyright-box">
                             <p className="copyright">
-                                2021 <strong>Alex Denyshchyk</strong>
+                                2021-2022 <strong>Alex Denyshchyk</strong>
                             </p>
                         </div>
                     </div>
+                    <a className="repo-link" href="https://github.com/dnshk/portfolio-react">Repository for this website</a>
                 </div>
             </div>
         </footer>
