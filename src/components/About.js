@@ -1,7 +1,7 @@
 import { useToggles } from '../js/useToggles.js';
 import Modal from "react-bootstrap/Modal";
 import profilePhoto from '../img/mugshot.jpg';
-import secondaryPhoto from '../img/sb-blue-mtn.jpg'
+import secondaryPhoto from '../img/sb-blue-mtn.jpg';
 
 function About() {
     const { toggles, handleToggles } = useToggles({
@@ -75,12 +75,16 @@ function About() {
                                                                 <img src={secondaryPhoto} className="img-fluid rounded b-shadow-a" alt="my interests"/>
                                                             </div>
                                                             <div className="col-lg-8">
-                                                                <p className="about-more-desc">My interests are not limited to Web Development and I am a certified snowboard instructor and Canadian Ski Patrol volunteer. I am convinced that there is always need for growth and my hobbies include sustainable travelling and trail running. Also, I am able to speak four languages and learning one on the top at the moment.</p>
+                                                                <p className="about-more-desc">
+                                                                    My interests are not limited to Web Development and I am a certified snowboard instructor and Canadian Ski Patrol volunteer. I am convinced that there is always need for growth and my hobbies include sustainable travelling and trail running. Also, I am able to speak four languages and learning one on the top at the moment.
+                                                                </p>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </Modal.Body>
-                                                <Modal.Footer><button className="btn btn-danger" onClick={() => handleToggles("isMoreAboutModalOpen", false)}>Close</button></Modal.Footer>
+                                                <Modal.Footer>
+                                                    <button className="btn btn-danger" onClick={() => handleToggles("isMoreAboutModalOpen", false)}>Close</button>
+                                                </Modal.Footer>
                                             </Modal>
                                         </div>
                                     </div>
