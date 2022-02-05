@@ -95,7 +95,7 @@ function Work() {
                             <Modal show={ eval("toggles." + item.toggle) } size="lg">
                                 <Modal.Header>
                                     <h2>{item.title}</h2>
-                                    <i class="bi bi-x-lg modal-close" onClick={() => handleToggles(item.toggle, false)}></i>
+                                    <i className="bi bi-x-lg modal-close" onClick={() => handleToggles(item.toggle, false)}></i>
                                 </Modal.Header>
                                 <Modal.Body>
                                     <section id="portfolio-details" className="portfolio-details">
