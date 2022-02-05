@@ -12,12 +12,12 @@ import 'bootstrap';
 function App() {
     return (
         <>
-          <Header/>
-          <Hero/>
-          <About/>
-          <Work/>
-          <Contact/>
-          <Footer/>
+            <Header/>
+            <Hero/>
+            <About/>
+            <Work/>
+            <Contact/>
+            <Footer/>
         </>
     );
 }
