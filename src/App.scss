@@ -438,9 +438,13 @@ a {
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
     background-color: $content-bg;
 }
-.portfolio-details .portfolio-info {
+.portfolio-details .portfolio-info, .about-more-desc {
     padding: 30px;
     box-shadow: 0px 0 30px rgba(78, 78, 78, 0.08);
+}
+.about-more-desc {
+    margin: 3% 0 3% 0;
+    text-align: justify;
 }
 .portfolio-details .portfolio-info h3 {
     font-size: 22px;
