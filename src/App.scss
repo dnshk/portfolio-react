@@ -140,6 +140,13 @@ a {
     border-radius: 50px;
     transition: all 0.4s;
 }
+.repo-link {
+    color: $txt-secondary;
+    text-decoration: none;
+}
+.repo-link:hover {
+    color: #298eff;
+}
 .back-to-top i {
     font-size: 28px;
     color: $txt-secondary;
