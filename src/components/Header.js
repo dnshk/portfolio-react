@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { onscroll, select } from '../js/main.js'
+import { onscroll, select } from '../js/main.js';
 
 function Header() {
     const [scrolling, setScrolling] = useState(false);
@@ -8,9 +8,9 @@ function Header() {
     useEffect(() => {
         const headerScrolled = () => {
             if (window.scrollY > 100) {
-              setScrolling(true);
+                setScrolling(true);
             } else {
-              setScrolling(false);
+                setScrolling(false);
             }
         }
         window.addEventListener('load', headerScrolled);
