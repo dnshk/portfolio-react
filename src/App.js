@@ -10,16 +10,16 @@ import Work from './components/Work';
 import 'bootstrap';
 
 function App() {
-  return (
-    <>
-      <Header/>
-      <Hero/>
-      <About/>
-      <Work/>
-      <Contact/>
-      <Footer/>
-    </>
-  );
+    return (
+        <>
+          <Header/>
+          <Hero/>
+          <About/>
+          <Work/>
+          <Contact/>
+          <Footer/>
+        </>
+    );
 }
 
 export default App;
