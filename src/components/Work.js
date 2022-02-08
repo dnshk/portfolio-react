@@ -92,7 +92,7 @@ function Work() {
                                     </div>
                                 </div>
                             </div>
-                            <Modal show={ eval("toggles." + item.toggle) } size="lg">
+                            <Modal show={ toggles[item.toggle] } size="lg">
                                 <Modal.Header>
                                     <h2>{item.title}</h2>
                                     <i className="bi bi-x-lg modal-close" onClick={() => handleToggles(item.toggle, false)}></i>
