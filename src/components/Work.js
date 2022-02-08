@@ -50,7 +50,7 @@ function Work() {
               clickable: true
             }
         });
-    });
+    }, []);
 
     return (
         <section id="work" className="portfolio-mf sect-pt4 route">

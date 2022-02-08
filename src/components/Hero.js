@@ -16,7 +16,7 @@ function Hero() {
                 backDelay: 2000,
             });
         }
-    });
+    }, []);
     return (
         <div id="hero" className="hero route bg-image" style={{backgroundImage: "url(" + `${process.env.PUBLIC_URL}` + "/assets/hero-bg.jpg)"}}>
             <div className="overlay-intro"></div>

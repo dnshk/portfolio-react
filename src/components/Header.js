@@ -30,7 +30,7 @@ function Header() {
         }
         window.addEventListener('load', navbarlinksActive);
         onscroll(document, navbarlinksActive);
-    });
+    }, []);
     return (
         <header id="header" className={scrolling ?  'header-scrolled fixed-top' : 'fixed-top'}>
             <div className="container d-flex align-items-center justify-content-between">

@@ -21,7 +21,7 @@ function Footer() {
             window.addEventListener('load', toggleBacktotop);
             onscroll(document, toggleBacktotop);
         }
-    });
+    }, []);
     return (
         <>
             <footer>
