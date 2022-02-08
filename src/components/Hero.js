@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import bgImg from '../img/hero-bg.jpg';
 import Typed from 'typed.js';
 import {select} from '../js/main.js'
 
@@ -19,7 +18,7 @@ function Hero() {
         }
     });
     return (
-        <div id="hero" className="hero route bg-image" style={{backgroundImage: "url(" + bgImg + ")"}}>
+        <div id="hero" className="hero route bg-image" style={{backgroundImage: "url(" + `${process.env.PUBLIC_URL}` + "/assets/hero-bg.jpg)"}}>
             <div className="overlay-intro"></div>
             <div className="hero-content display-table">
                 <div className="table-cell">

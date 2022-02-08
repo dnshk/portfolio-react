@@ -1,7 +1,5 @@
 import { useToggles } from '../js/useToggles.js';
 import Modal from "react-bootstrap/Modal";
-import profilePhoto from '../img/mugshot.jpg';
-import secondaryPhoto from '../img/sb-blue-mtn.jpg';
 
 function About() {
     const { toggles, handleToggles } = useToggles({
@@ -18,7 +16,7 @@ function About() {
                                 <div className="row">
                                     <div className="col-sm-6 col-md-5">
                                         <div className="about-img">
-                                            <img src={profilePhoto} className="img-fluid rounded b-shadow-a" alt="profile"/>
+                                            <img src={`${process.env.PUBLIC_URL}` + '/assets/mugshot.jpg'} className="img-fluid rounded b-shadow-a" alt="profile"/>
                                         </div>
                                     </div>
                                     <div className="col-sm-6 col-md-7">
@@ -72,7 +70,7 @@ function About() {
                                                     <div className="container">
                                                         <div className="row gy-4">
                                                             <div className="col-lg-4">
-                                                                <img src={secondaryPhoto} className="img-fluid rounded b-shadow-a" alt="my interests"/>
+                                                                <img src={`${process.env.PUBLIC_URL}` + '/assets/sb-blue-mtn.jpg'} className="img-fluid rounded b-shadow-a" alt="my interests"/>
                                                             </div>
                                                             <div className="col-lg-8">
                                                                 <p className="about-more-desc">
