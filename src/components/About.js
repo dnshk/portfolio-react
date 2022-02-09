@@ -16,7 +16,7 @@ function About() {
                                 <div className="row">
                                     <div className="col-sm-6 col-md-5">
                                         <div className="about-img">
-                                            <img src={`${process.env.PUBLIC_URL}` + '/assets/mugshot.jpg'} className="img-fluid rounded b-shadow-a" alt="profile"/>
+                                            <img src={`${process.env.PUBLIC_URL}` + '/assets/mugshot.jpg'} className="img-fluid rounded b-shadow-a" alt="Alex Denyshchyk portrait photo in front of the lake"/>
                                         </div>
                                     </div>
                                     <div className="col-sm-6 col-md-7">
@@ -70,7 +70,7 @@ function About() {
                                                     <div className="container">
                                                         <div className="row gy-4">
                                                             <div className="col-lg-4">
-                                                                <img src={`${process.env.PUBLIC_URL}` + '/assets/sb-blue-mtn.jpg'} className="img-fluid rounded b-shadow-a" alt="my interests"/>
+                                                                <img src={`${process.env.PUBLIC_URL}` + '/assets/sb-blue-mtn.jpg'} className="img-fluid rounded b-shadow-a" alt="Alex Denyshchyk full-body photo with a snowboard"/>
                                                             </div>
                                                             <div className="col-lg-8">
                                                                 <p className="about-more-desc">

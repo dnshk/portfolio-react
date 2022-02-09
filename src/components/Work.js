@@ -50,7 +50,7 @@ function Work() {
               clickable: true
             }
         });
-    }, []);
+    });
 
     return (
         <section id="work" className="portfolio-mf sect-pt4 route">
@@ -74,7 +74,7 @@ function Work() {
                         <div className="col-md-4" key={item.key}>
                             <div className="work-box">
                                 <div className="work-img">
-                                    <img src={`${process.env.PUBLIC_URL}` + item.titleImage} alt="showcase item" className="img-fluid" />
+                                    <img src={`${process.env.PUBLIC_URL}` + item.titleImage} alt={item.title + 'main showcase item'} className="img-fluid" />
                                 </div>
                                 <div className="work-content">
                                     <div className="row">
@@ -107,7 +107,7 @@ function Work() {
                                                             {
                                                                 item.images && item.images.length > 0 && item.images.map((image)=>
                                                                     <div className="swiper-slide" key={image}>
-                                                                        <img src={`${process.env.PUBLIC_URL}` + image} alt="project" />
+                                                                        <img src={`${process.env.PUBLIC_URL}` + image} alt={item.title + ' additional showcase item'} />
                                                                     </div>
                                                                 )
                                                             }
