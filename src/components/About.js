@@ -23,7 +23,7 @@ function About() {
                                         <div className="about-info">
                                             <p><span className="title-s">Current Ocupation: </span> <span>Full Stack Web Developer</span></p>
                                             <p><span className="title-s">Current Employment Status: </span> <span>Freelancer</span></p>
-                                            <p><a href="./Alex_Denyshchyk_Resume_2022.pdf" className="resume" id="downloadResume" download>Download Resume</a></p>
+                                            <p><a href="https://drive.google.com/file/d/1xziPW0hnwa2R4PYBQu_I5bHZO1K85bAx/view?usp=sharing" className="resume" id="downloadResume">View Resume</a></p>
                                             <div className="column-skills">
                                                 <div className="skill-mf">
                                                     <div className="title-box-2">
