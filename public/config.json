@@ -20,7 +20,7 @@
             "category": "WordPress Website Development",
             "date": "Nov, 2021",
             "client": "Startup Company",
-            "details": "This website is an online store for a Canadian company launching their new project. The main focus of the project is innovative furniture design. My contribution includes AWS services set up (Lightsail, Route53), Landing and Shop pages development, consultation throughout the building process, and cooperation with the design team.",
+            "details": "This website is an online store for a Canadian company launching their new project. The main focus of the project is innovative furniture design. My contribution includes AWS set up (Lightsail, Route53), Landing and Shop pages development, consultation throughout the building process, and cooperation with the design team.",
             "link": "http://harvada.io/",
             "titleImage": "/assets/harvada/showcase.png",
             "images":["/assets/harvada/showcase.png", "/assets/harvada/shop.png", "/assets/harvada/home.png"],
