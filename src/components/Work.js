@@ -106,7 +106,7 @@ function Work() {
                                                         <div className="swiper-wrapper align-items-center">
                                                             {
                                                                 item.images && item.images.length > 0 && item.images.map((image)=>
-                                                                    <div className="swiper-slide" key={image}>
+                                                                    <div className= {item.images.length > 1 ? 'swiper-slide' : ''} key={image}>
                                                                         <img src={`${process.env.PUBLIC_URL}` + image} alt={item.title + ' additional showcase item'} />
                                                                     </div>
                                                                 )
